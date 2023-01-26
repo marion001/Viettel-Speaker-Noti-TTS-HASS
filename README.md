@@ -35,7 +35,6 @@ Tạo tài khoản + tạo token tại đây: https://viettelgroup.ai/dashboard/
           entity_id: media_player.googlehomemini    
           message: '{{ states(''input_text.viettell_tts_text'') }}'
           voice_type: 'nu_mien_bac_01'    
-          speed: '0.9'   #tốc độ giọng (có giá trị 0.7 - 1.3, tương ứng tốc độ đọc từ x0.7 đến x1.3 lần).
  
 #Cấu hình Xong check config rồi khởi động lại home assistant
 

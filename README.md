@@ -34,7 +34,6 @@ Tạo tài khoản + tạo token tại đây: https://viettelgroup.ai/dashboard/
         data_template:
           entity_id: media_player.googlehomemini    
           message: '{{ states(''input_text.viettell_tts_text'') }}'
-          voice_type: 'nu_mien_bac_01'    
  
 #Cấu hình Xong check config rồi khởi động lại home assistant
 

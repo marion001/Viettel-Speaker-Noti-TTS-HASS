@@ -39,4 +39,32 @@ Tạo tài khoản + tạo token tại đây: https://viettelgroup.ai/dashboard/
  
 #Cấu hình Xong check config rồi khởi động lại home assistant
 
+# Cấu hình lovelace:
+
+    type: custom:vertical-stack-in-card
+    cards:
+      - artwork: cover
+        entity: media_player.googlehomemini
+        hide:
+          icon_state: false
+          power_state: false
+          runtime: false
+          source: false
+          volume: false
+        icon: mdi:google-assistant
+        type: custom:mini-media-player
+        name: Loa Google Home Mini
+        info: short
+      - type: entities
+        entities:
+          - entity: input_text.viettell_tts_text
+            icon: mdi:message-processing
+            name: 'Nhập Nội Dung:'
+          - entity: script.viettel_speaker
+            name: 'Gửi Thông Báo:'
+            icon: mdi:cast-audio
+
+
 Lưu Ý: Token Key chỉ dùng được 180 ngày. hết 180 ngày tạo token khác thay vào
+
+

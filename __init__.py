@@ -36,8 +36,8 @@ def setup(hass, cfg):
         # Ghép URL File http://192.168.xxx.xxx:8123/local/tts/xxxxx.mp3
         Http_File_Mp3 = Http_Hass+"/local/Viettel_Speaker/"+Ten_File_TTS
         
-        Service_Data = {'entity_id': Id_Speak_Hass, 'media_content_id': Http_File_Mp3, 'media_content_type': 'audio/mp3'}
-        hass.services.call('media_player', 'play_media', Service_Data)
+        Data_Hass = {'entity_id': Id_Speak_Hass, 'media_content_id': Http_File_Mp3, 'media_content_type': 'audio/mp3'}
+        hass.services.call('media_player', 'play_media', Data_Hass)
         
     hass.services.register(DOMAIN, CFG_Noti, xuly_dulieu)
     return True
